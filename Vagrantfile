@@ -100,7 +100,4 @@ Vagrant.configure("2") do |config|
     webdev.vm.hostname = "webdev"
     webdev.vm.network "private_network", ip: "192.168.33.50"
   end  
-
-
-
 end

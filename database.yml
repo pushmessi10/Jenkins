@@ -39,16 +39,16 @@
 
     - name: Create application database
       mysql_db:
-        name: dushyant_database
+        name: pushkar_database
         state: present
 
 
     - name: Create an application user
       mysql_user:
-        name: dushyant_user
-        password: dushyant_password
+        name: pushkar_user
+        password: pushkar_password
         host: '%'
-        priv: dushyant_database.*:ALL
+        priv: pushkar_database.*:ALL
         state: present
 
 

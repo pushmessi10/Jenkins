@@ -11,9 +11,9 @@
       yum: name=git state=present
 
 
-    - name: Download and deploy Dushyant's Project
+    - name: Download and deploy DevOps Project
       git: 
-        repo: http://github.com/dushyant8858/DevOps
+        repo: http://github.com/pushmessi10/DevOps_Final
         dest: /var/www/html/CodeIgniter-3.1.5/
         clone: yes  
 
