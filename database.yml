@@ -76,5 +76,12 @@
     - name: Import bookings.sql
       mysql_db:
         state: import
+        name: db
+        target: /tmp/bookings.sql
+
+     
+    - name: Import bookings.sql
+      mysql_db:
+        state: import
         name: all
         target: /tmp/bookings.sql
