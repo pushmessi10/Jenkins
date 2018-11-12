@@ -41,6 +41,12 @@
       mysql_db:
         name: pushkar_database
         state: present
+        
+        
+    - name: Create application database
+      mysql_db:
+       name: ci_database
+       state: present
 
 
     - name: Create an application user
@@ -52,15 +58,6 @@
         state: present
 
 
-
-
-
-
-    - name: Create application database
-      mysql_db:
-        name: ci_database
-        state: present
-
     - name: Create an application user
       mysql_user:
         name: ci_user
@@ -68,14 +65,8 @@
         host: '%'
         priv: ci_database.*:ALL
         state: present
-
-
-
-
-
-
-
-
+        
+        
     - name: Upload bookings.sql
       copy:
         src: bookings.sql
