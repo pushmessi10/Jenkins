@@ -93,11 +93,4 @@ Vagrant.configure("2") do |config|
     jenkins.vm.network "private_network", ip: "192.168.33.40"
   end
 
-
-
-
-  config.vm.define "webdev" do |webdev|
-    webdev.vm.hostname = "webdev"
-    webdev.vm.network "private_network", ip: "192.168.33.50"
-  end  
 end
